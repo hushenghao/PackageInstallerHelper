@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">自动安装器</string>
+    <string name="accessibility_service_label">自动安装器</string>
+    <string name="accessibility_service_description">系统包安装器助手。自动点击安装页安装按钮，和安装完成页完成按钮</string>
+
+    <string name="bt_disable_service">去启用辅助功能</string>
+    <string name="bt_enable_service">已启用辅助功能</string>
+</resources>
