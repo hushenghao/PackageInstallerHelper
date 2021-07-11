@@ -16,6 +16,11 @@ class PackageInstallerAccessibilityService : AccessibilityService() {
     companion object {
         private const val TAG = "PackageInstaller"
 
+        private val TARGET_PACKAGE_NAMES = arrayOf(
+            "com.android.packageinstaller",
+            "com.google.android.packageinstaller"
+        ) // 需要处理目标包名的无障碍事件
+
         private const val ID_FORMAT = "%s:id/%s"
 
         private const val PACKAGE_INSTALLER = "com.android.packageinstaller"
@@ -172,6 +177,7 @@ class PackageInstallerAccessibilityService : AccessibilityService() {
     override fun onServiceConnected() {
         super.onServiceConnected()
         Log.i(TAG, "onServiceConnected: ")
+        serviceInfo.packageNames = TARGET_PACKAGE_NAMES
     }
 
 }
